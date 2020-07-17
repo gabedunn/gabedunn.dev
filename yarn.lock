@@ -2175,6 +2175,7 @@ fsevents@~2.1.2:
     tailwindcss: ^1.5.1
     vite: ^1.0.0-beta.3
     vue: ^3.0.0-beta.15
+    vue-router: next
   languageName: unknown
   linkType: soft
 
@@ -5320,6 +5321,15 @@ fsevents@~2.1.2:
   peerDependencies:
     eslint: ">=5.0.0"
   checksum: a4d11879c10d38ef6e6cdb1d5167feffd4f6e0536792fef2a2784ee2f1174358ee475d262481bd545b7433c600f737bc8fa1cf94373e0f7c5c9d8b59440ded63
+  languageName: node
+  linkType: hard
+
+"vue-router@npm:next":
+  version: 4.0.0-beta.2
+  resolution: "vue-router@npm:4.0.0-beta.2"
+  peerDependencies:
+    vue: ^3.0.0-beta.18
+  checksum: 1d380210cc46f2c6b15103e146a07e15d51bcff603e8016e5b911e393469c2893f053a52b32782a9c017ef34c55c01792f409150282c885f4fe0a9fd9d5667fe
   languageName: node
   linkType: hard
 

@@ -92,6 +92,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [
         "vue",
         "npm:3.0.0-beta.18"
+      ],
+      [
+        "vue-router",
+        "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:4.0.0-beta.2"
       ]
     ],
     "locationBlacklistData": [
@@ -116,7 +120,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["tailwindcss", "npm:1.5.1"],
             ["vite", "npm:1.0.0-beta.11"],
-            ["vue", "npm:3.0.0-beta.18"]
+            ["vue", "npm:3.0.0-beta.18"],
+            ["vue-router", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:4.0.0-beta.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -2600,7 +2605,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["tailwindcss", "npm:1.5.1"],
             ["vite", "npm:1.0.0-beta.11"],
-            ["vue", "npm:3.0.0-beta.18"]
+            ["vue", "npm:3.0.0-beta.18"],
+            ["vue-router", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:4.0.0-beta.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -6108,6 +6114,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "packagePeers": [
             "eslint"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vue-router", [
+        ["virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:4.0.0-beta.2", {
+          "packageLocation": "./.yarn/$$virtual/vue-router-virtual-304004ca0d/0/cache/vue-router-npm-4.0.0-beta.2-3c42ef4d01-1d380210cc.zip/node_modules/vue-router/",
+          "packageDependencies": [
+            ["vue-router", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:4.0.0-beta.2"],
+            ["vue", "npm:3.0.0-beta.18"]
+          ],
+          "packagePeers": [
+            "vue"
           ],
           "linkType": "HARD",
         }]
