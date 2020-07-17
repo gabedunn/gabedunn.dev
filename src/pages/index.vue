@@ -33,6 +33,6 @@
 
 <style>
   main {
-    height: calc(100% - 60px);
+    height: calc(100vh - 210px);
   }
 </style>
