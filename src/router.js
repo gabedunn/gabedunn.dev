@@ -7,14 +7,17 @@ export default createRouter({
   routes: [
     {
       path: '/',
+      name: 'home',
       component: index
     },
     {
       path: '/projects',
+      name: 'projects',
       component: index // TODO: switch to projects page
     },
     {
       path: '/*',
+      name: 'notfound',
       component: index // TODO: switch to error page
     }
   ]
