@@ -1,58 +1,153 @@
 <template>
-  <nav class="container mx-auto">
-    <ul>
-      <li>
-        <router-link to="/">home</router-link>
-      </li>
-      <li>
-        <router-link to="/projects">projects</router-link>
-      </li>
-    </ul>
+  <nav class="bg-white shadow">
+    <container>
+      <div class="relative flex justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+            aria-label="Main menu"
+            aria-expanded="false"
+            @click="toggleMenu"
+          >
+            <!-- Icon when menu is closed. -->
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg
+              :class="menuState ? 'hidden' : 'block'"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <!-- Icon when menu is open. -->
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg
+              :class="menuState ? 'block' : 'hidden'"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+        >
+          <div class="hidden sm:ml-6 sm:flex">
+            <!--suppress JSUnresolvedVariable, JSUnusedLocalSymbols -->
+            <router-link
+              v-for="route in routes"
+              :key="route.name"
+              :to="route.path"
+              class="navbar-link"
+              v-text="route.name"
+            />
+          </div>
+        </div>
+      </div>
+    </container>
+
+    <!--
+      Mobile menu, toggle classes based on menu state.
+
+      Menu open: "block", Menu closed: "hidden"
+    -->
+    <div :class="menuState ? 'block' : 'hidden'" class="sm:hidden">
+      <div class="pt-2 pb-4">
+        <!--suppress JSUnresolvedVariable, JSUnusedLocalSymbols -->
+        <router-link
+          v-for="route in routes"
+          :key="route.name"
+          :to="route.path"
+          class="navbar-link-mobile"
+          v-text="route.name"
+        />
+      </div>
+    </div>
   </nav>
 </template>
 
 <script>
+  import Container from './layout/Container.vue'
+
   export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    components: { Container },
+    data() {
+      return {
+        menuState: false
+      }
+    },
+    computed: {
+      routes() {
+        return this.$router
+          .getRoutes()
+          .filter(r => r.name !== 'notfound')
+          .map(r => {
+            return { name: r.name, path: r.path }
+          })
+      }
+    },
+    methods: {
+      toggleMenu() {
+        this.menuState = !this.menuState
+      }
+    }
   }
 </script>
 
 <style>
-  nav {
-    border-bottom: 1px solid rgba(0, 157, 231, 0.2);
-    font-weight: 300;
-    padding: 0 1em;
+  .navbar-link {
+    @apply ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out;
+
+    &:hover {
+      @apply text-gray-700 border-gray-300;
+    }
+
+    &:focus {
+      @apply outline-none text-gray-700 border-gray-300;
+    }
+
+    &.router-link-active {
+      @apply border-indigo-500 text-gray-900;
+
+      &:focus {
+        @apply border-indigo-700;
+      }
+    }
   }
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  /* clearfix */
-  ul::after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  li {
-    display: block;
-    float: left;
-  }
-  .selected {
-    position: relative;
-    display: inline-block;
-  }
-  .selected::after {
-    position: absolute;
-    content: '';
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(0, 157, 231);
-    display: block;
-    bottom: -1px;
-  }
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
+
+  .navbar-link-mobile {
+    @apply mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 transition duration-150 ease-in-out;
+
+    &:hover {
+      @apply text-gray-800 bg-gray-50 border-gray-300;
+    }
+
+    &:focus {
+      @apply outline-none text-gray-800 bg-gray-50 border-gray-300;
+    }
+
+    &.router-link-active {
+      @apply border-indigo-500 text-indigo-700 bg-indigo-50;
+
+      &:focus {
+        @apply text-indigo-800 bg-indigo-100 border-indigo-700;
+      }
+    }
   }
 </style>
