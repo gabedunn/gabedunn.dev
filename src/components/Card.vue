@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="mx-auto">
     <div
       class="rounded overflow-hidden shadow-md hover:shadow-xl transition duration-150 ease-in-out"
       :class="style"

@@ -10,13 +10,14 @@
       </page-title>
     </sec>
     <main-sec>
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <card
           v-for="project in projects"
           :key="project.name"
           :title="project.name"
           :image="project.image"
           :href="project.href"
+          size="lg"
         >
           <template v-if="project.github" #title>
             <span>
