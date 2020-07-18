@@ -13,7 +13,9 @@ export default createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: Home // TODO: switch to projects page
+      component: async () => {
+        return import('./pages/projects.vue')
+      }
     },
     {
       path: '/*',
