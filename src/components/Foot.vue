@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white my-8">
+  <footer class="bg-white">
     <container>
       <div class="mt-8 flex justify-center">
         <a
