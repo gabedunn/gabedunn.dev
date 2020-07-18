@@ -30,6 +30,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "fallbackPool": [
       [
+        "@tailwindcss/typography",
+        "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.2.0"
+      ],
+      [
         "@tailwindcss/ui",
         "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.3.1"
       ],
@@ -70,6 +74,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:10.2.11"
       ],
       [
+        "lodash",
+        "npm:4.17.19"
+      ],
+      [
         "postcss-nested",
         "npm:4.2.3"
       ],
@@ -105,6 +113,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@tailwindcss/typography", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.2.0"],
             ["@tailwindcss/ui", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.3.1"],
             ["@vue/compiler-sfc", "virtual:671bd174f550f58a08363f920dff6860a0b7233190227642487ea9084578467760291097cf3d16896e0fdf6cab98221358ca3067abd798f0c5353ea604c519a0#npm:3.0.0-beta.18"],
             ["autoprefixer", "npm:9.8.5"],
@@ -115,6 +124,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-vue", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:7.0.0-alpha.10"],
             ["husky", "npm:4.2.5"],
             ["lint-staged", "npm:10.2.11"],
+            ["lodash", "npm:4.17.19"],
             ["postcss-nested", "npm:4.2.3"],
             ["postcss-preset-env", "npm:6.7.0"],
             ["prettier", "npm:2.0.5"],
@@ -413,6 +423,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mini-svg-data-uri", "npm:1.2.3"],
             ["tailwindcss", "npm:1.5.1"],
             ["traverse", "npm:0.6.6"]
+          ],
+          "packagePeers": [
+            "tailwindcss"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@tailwindcss/typography", [
+        ["virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.2.0", {
+          "packageLocation": "./.yarn/$$virtual/@tailwindcss-typography-virtual-8b203d190b/0/cache/@tailwindcss-typography-npm-0.2.0-a2f9b30b81-07b1231917.zip/node_modules/@tailwindcss/typography/",
+          "packageDependencies": [
+            ["@tailwindcss/typography", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.2.0"],
+            ["tailwindcss", "npm:1.5.1"]
           ],
           "packagePeers": [
             "tailwindcss"
@@ -2590,6 +2613,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["gabedunn.dev", "workspace:."],
+            ["@tailwindcss/typography", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.2.0"],
             ["@tailwindcss/ui", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:0.3.1"],
             ["@vue/compiler-sfc", "virtual:671bd174f550f58a08363f920dff6860a0b7233190227642487ea9084578467760291097cf3d16896e0fdf6cab98221358ca3067abd798f0c5353ea604c519a0#npm:3.0.0-beta.18"],
             ["autoprefixer", "npm:9.8.5"],
@@ -2600,6 +2624,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-vue", "virtual:32e4b212a295374c141bfd2a13cbd764c37f3c6daf2a83517f13fcbf66e9af11e453600d8f2faa99e072bf89fed27875f807ee125d155fb552f931b3ed5f346a#npm:7.0.0-alpha.10"],
             ["husky", "npm:4.2.5"],
             ["lint-staged", "npm:10.2.11"],
+            ["lodash", "npm:4.17.19"],
             ["postcss-nested", "npm:4.2.3"],
             ["postcss-preset-env", "npm:6.7.0"],
             ["prettier", "npm:2.0.5"],

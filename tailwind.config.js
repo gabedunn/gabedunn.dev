@@ -77,5 +77,5 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [require('@tailwindcss/ui')]
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/ui')]
 }

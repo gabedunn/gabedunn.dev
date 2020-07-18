@@ -255,6 +255,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/typography@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@tailwindcss/typography@npm:0.2.0"
+  peerDependencies:
+    tailwindcss: ^1.5.0
+  checksum: 07b12319171e62151e7212fdf3aeeaff64d282934d6fa37b7c668bc00cb652930ef6841b1a88a927d3c459ab2a0df67a9e94f386a069efd8efa0b6c7b451aec6
+  languageName: node
+  linkType: hard
+
 "@tailwindcss/ui@npm:^0.3.1":
   version: 0.3.1
   resolution: "@tailwindcss/ui@npm:0.3.1"
@@ -2159,6 +2168,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "gabedunn.dev@workspace:."
   dependencies:
+    "@tailwindcss/typography": ^0.2.0
     "@tailwindcss/ui": ^0.3.1
     "@vue/compiler-sfc": ^3.0.0-beta.15
     autoprefixer: ^9.8.5
@@ -2169,6 +2179,7 @@ fsevents@~2.1.2:
     eslint-plugin-vue: next
     husky: ^4.2.5
     lint-staged: ^10.2.11
+    lodash: ^4.17.19
     postcss-nested: ^4.2.3
     postcss-preset-env: ^6.7.0
     prettier: ^2.0.5
