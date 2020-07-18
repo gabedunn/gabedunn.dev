@@ -1,24 +1,26 @@
 <template>
   <container>
-    <main-sec>
-      <div>
-        <h1 class="title">Gabe Dunn.</h1>
-        <h2 class="subtitle">Full-stack web & software developer.</h2>
-      </div>
+    <sec id="titles">
+      <page-title>
+        Gabe Dunn.
+        <template #subtitle>Full-stack web & software developer.</template>
+      </page-title>
+    </sec>
 
-      <div class="mt-24 text-lg font-light text-justify">
-        <p class="mt-4">
+    <main-sec>
+      <div class="prose prose-lg">
+        <p>
           Hello! I am a full-stack web and software developer based in Calgary,
           Alberta and I've been working with web technologies for the past
-          {devYears} years.
+          {{ years }} years.
         </p>
-        <p class="my-4">
+        <p>
           If you are interested in working with me please reach out via any of
           the contacts listed below.
         </p>
-        <p class="my-4">
-          Check out my <a href="projects">projects</a> page to learn more about
-          some of the projects I've worked on.
+        <p>
+          Check out my <router-link to="/projects">projects</router-link> page
+          to learn more about some of the projects I've worked on.
         </p>
       </div>
     </main-sec>
@@ -28,18 +30,24 @@
 <script>
   import MainSec from '../components/layout/MainSec.vue'
   import Container from '../components/layout/Container.vue'
+  import PageTitle from '../components/titles/PageTitle.vue'
+  import Sec from '../components/layout/Sec.vue'
+
+  import toWords from '../assets/js/toWords.js'
+
   export default {
     name: 'Home',
-    components: { Container, MainSec }
+    components: { Sec, PageTitle, Container, MainSec },
+    computed: {
+      years() {
+        const yearsSince = (from, to) =>
+          Math.abs(
+            Math.round(
+              (to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+            )
+          )
+        return toWords(yearsSince(new Date('2015-10-15'), new Date()))
+      }
+    }
   }
 </script>
-
-<style>
-  main {
-    height: calc(100vh - 208px);
-  }
-
-  .title {
-    font-family: 'TT Norms';
-  }
-</style>
