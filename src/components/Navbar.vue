@@ -123,10 +123,10 @@
     }
 
     &.router-link-active {
-      @apply border-indigo-500 text-gray-900;
+      @apply border-blue-500 text-gray-900;
 
       &:focus {
-        @apply border-indigo-700;
+        @apply border-blue-700;
       }
     }
   }
@@ -143,10 +143,10 @@
     }
 
     &.router-link-active {
-      @apply border-indigo-500 text-indigo-700 bg-indigo-50;
+      @apply border-blue-500 text-blue-700 bg-blue-50;
 
       &:focus {
-        @apply text-indigo-800 bg-indigo-100 border-indigo-700;
+        @apply text-blue-800 bg-blue-100 border-blue-700;
       }
     }
   }

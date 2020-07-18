@@ -114,7 +114,7 @@
 
 <style>
   .badge {
-    @apply inline-flex items-center mx-1 px-2 py-0.5 rounded text-xs font-medium leading-4 bg-gray-100 text-gray-800;
+    @apply inline-flex items-center mx-1 px-2 py-0.5 rounded text-xs font-medium leading-4 bg-blue-100 text-blue-800;
 
     &:first-child {
       @apply ml-0;
