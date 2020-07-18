@@ -1,6 +1,6 @@
 <template>
-  <main class="px-4 md:px-8 flex flex-col justify-between">
-    <div id="home" class="container mx-auto my-24 flex-1">
+  <container>
+    <main-sec>
       <div>
         <h1 class="title">Gabe Dunn.</h1>
         <h2 class="subtitle">Full-stack web & software developer.</h2>
@@ -21,18 +21,25 @@
           some of the projects I've worked on.
         </p>
       </div>
-    </div>
-  </main>
+    </main-sec>
+  </container>
 </template>
 
 <script>
+  import MainSec from '../components/layout/MainSec.vue'
+  import Container from '../components/layout/Container.vue'
   export default {
-    name: 'Index'
+    name: 'Home',
+    components: { Container, MainSec }
   }
 </script>
 
 <style>
   main {
     height: calc(100vh - 208px);
+  }
+
+  .title {
+    font-family: 'TT Norms';
   }
 </style>

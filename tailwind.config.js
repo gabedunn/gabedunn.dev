@@ -28,7 +28,7 @@ module.exports = {
         center: true
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans]
+        sans: ['TT Norms', 'Inter var', ...defaultTheme.fontFamily.sans]
       },
       screens: {
         xs: '425px'

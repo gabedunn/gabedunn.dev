@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import index from './pages/index.vue'
+import Home from './pages/home.vue'
 
 export default createRouter({
   history: createWebHistory(),
@@ -8,17 +8,17 @@ export default createRouter({
     {
       path: '/',
       name: 'home',
-      component: index
+      component: Home
     },
     {
       path: '/projects',
       name: 'projects',
-      component: index // TODO: switch to projects page
+      component: Home // TODO: switch to projects page
     },
     {
       path: '/*',
       name: 'notfound',
-      component: index // TODO: switch to error page
+      component: Home // TODO: switch to error page
     }
   ]
 })
