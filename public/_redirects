@@ -1,0 +1,4 @@
+http://gabedunn.dev/* https://gabedunn.dev/:splat 301!
+
+# History mode for SPA
+/* / 200
