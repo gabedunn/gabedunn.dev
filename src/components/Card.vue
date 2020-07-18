@@ -10,9 +10,9 @@
       </a>
       <div class="px-6 my-4">
         <section-title class="mb-2"><slot name="title" /></section-title>
-        <text-content darker>
+        <div class="prose">
           <slot />
-        </text-content>
+        </div>
       </div>
       <div v-if="$slots.footer" class="px-6 my-4">
         <slot name="footer" />
@@ -23,11 +23,10 @@
 
 <script>
   import SectionTitle from './titles/SectionTitle.vue'
-  import TextContent from './TextContent.vue'
 
   export default {
     name: 'Card',
-    components: { TextContent, SectionTitle },
+    components: { SectionTitle },
     props: {
       image: {
         type: String,
