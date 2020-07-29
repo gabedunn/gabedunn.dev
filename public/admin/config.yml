@@ -4,7 +4,7 @@ backend:
   repo: gabedunn/gabedunn.dev
   branch: master
 
-site_url: https://when.sh
+site_url: https://gabedunn.dev
 
 media_library:
   name: cloudinary

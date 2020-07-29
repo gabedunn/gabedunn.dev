@@ -16,27 +16,28 @@
           :key="project.name"
           :title="project.name"
           :image="project.image"
-          :href="project.href"
+          :href="project.url"
           size="lg"
         >
           <template v-if="project.github" #title>
             <span>
-              <a :href="project.href" target="_blank">{{ project.name }}</a> |
+              <a :href="project.url" target="_blank">{{ project.name }}</a> |
               <a :href="`https://github.com/${project.github}`" target="_blank">
                 github
               </a>
             </span>
           </template>
           <template v-else #title>
-            <a :href="project.href" target="_blank">{{ project.name }}</a>
+            <a :href="project.url" target="_blank">{{ project.name }}</a>
           </template>
           {{ project.description }}
           <template #footer>
+            <!--suppress JSUnresolvedVariable -->
             <span
               v-for="skill in project.skills"
-              :key="skill"
+              :key="skill.skill"
               class="badge"
-              v-text="skill"
+              v-text="skill.skill"
             />
           </template>
         </card>
@@ -52,62 +53,13 @@
   import Card from '../components/Card.vue'
   import Sec from '../components/layout/Sec.vue'
 
+  import projects from '../assets/content/projects.json'
+
   export default {
     components: { Sec, Card, MainSec, PageTitle, Container },
     data() {
       return {
-        projects: [
-          {
-            name: 'gabedunn.dev',
-            description: 'This website. My personal website and portfolio.',
-            href: 'https://gabedunn.dev',
-            github: 'redxtech/gabedunn.dev',
-            image: 'https://i.imgur.com/a3USZLo.png',
-            skills: ['vue', 'vite', 'tailwind', 'vue3']
-          },
-          {
-            name: 'when.',
-            description:
-              'A simple website to show when the next episode of your favourite TV shows will air.',
-            href: 'https://when.redxte.ch',
-            github: 'redxtech/when',
-            image: 'https://i.imgur.com/CjOQSan.png',
-            skills: ['vue', 'APIs', 'OAuth2', 'fetch', 'flux']
-          },
-          {
-            name: 'canmore-brewing',
-            description:
-              'A landing page and informative website for a local brewery.',
-            href: 'https://canmorebrewing.com',
-            image: 'https://i.imgur.com/tlZ4dsK.png',
-            skills: ['vue', 'APIs', 'google maps']
-          },
-          {
-            name: 'devmod',
-            description: 'A moderation bot for a discord server.',
-            href: 'https://devcord.com',
-            github: 'redxtech/devmod',
-            image: 'https://i.imgur.com/ltBwusB.png',
-            skills: ['node', 'discord.js', 'async', 'moderation']
-          },
-          {
-            name: 'devcord',
-            description:
-              'A discord community that brings together web developers of all experience levels.',
-            href: 'https://devcord.com',
-            github: 'devcord',
-            image: 'https://i.imgur.com/Ov3QJaB.png',
-            skills: ['discord', 'developer', 'community']
-          },
-          {
-            name: 'vue-plyr',
-            description: 'A vue component for the plyr video & audio player.',
-            href: 'https://github.com/redxtech/vue-plyr',
-            github: 'redxtech/vue-plyr',
-            image: 'https://i.imgur.com/6FtNns2.png',
-            skills: ['vue', 'js', 'npm', 'components']
-          }
-        ]
+        projects: projects.projects
       }
     }
   }
