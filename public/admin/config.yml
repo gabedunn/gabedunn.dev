@@ -1,0 +1,49 @@
+backend:
+  name: github
+  #name: git-gateway
+  repo: gabedunn/gabedunn.dev
+  branch: master
+
+site_url: https://when.sh
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: gabe-dunn-dev
+    api_key: 313196819418726
+
+collections:
+  - label: Projects
+    name: projects
+    files:
+      - label: Projects
+        name: projects
+        file: src/assets/content/projects.json
+        fields:
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Description
+                name: description
+                widget: string
+              - label: URL
+                name: url
+                widget: string
+              - label: GitHub
+                name: github
+                widget: string
+                required: false
+              - label: Image
+                name: image
+                widget: image
+              - label: Skills
+                name: skills
+                widget: list
+                fields:
+                  - { label: Skill, name: skill, widget: string }
+    editor:
+      preview: false
