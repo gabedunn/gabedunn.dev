@@ -78,7 +78,7 @@
       "name": "devmod",
       "description": "A moderation bot for a discord server.",
       "url": "https://devcord.com",
-      "github": "redxtech/devmod",
+      "github": "redxtech/devmod-core",
       "image": "https://res.cloudinary.com/gabe-dunn-dev/image/upload/v1596055092/gabedunn.dev/projects/devmod.png",
       "skills": [
         {
