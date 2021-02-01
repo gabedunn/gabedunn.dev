@@ -29,7 +29,7 @@
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
     "tailwindcss": "^1.5.1",
-    "vite": "^1.0.0-beta.3"
+    "vite": "^2.0.0-beta.60"
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint"
