@@ -1,7 +1,8 @@
 http://gabedunn.dev/* https://gabedunn.dev/:splat 301!
 
 # redirect for installer script
-*dot.gabedunn.dev/* https://raw.githubusercontent.com/redxtech/dotfiles/master/.local/dotfiles/boostrap.sh 301!
+http://dot.gabedunn.dev/* https://dot.gabedunn.dev 301!
+https://dot.gabedunn.dev/* https://raw.githubusercontent.com/redxtech/dotfiles/master/.local/dotfiles/boostrap.sh 301!
 
 # History mode for SPA
 /* / 200
