@@ -58,6 +58,30 @@
       ]
     },
     {
+      "name": "blog",
+      "description": "where i talk about linux, programming, and other fun computery stuff",
+      "url": "https://blog.gabedunn.dev",
+      "github": "redxtech/blog",
+      "image": "https://i.imgur.com/VZT3wCQ.png",
+      "skills": [
+        {
+          "skill": "vue"
+        },
+        {
+          "skill": "vitepress"
+        },
+        {
+          "skill": "static"
+        },
+        {
+          "skill": "markdown"
+        },
+        {
+          "skill": "writing"
+        }
+      ]
+    },
+    {
       "name": "canmore-brewing",
       "description": "A landing page and informative website for a local brewery.",
       "url": "https://canmorebrewing.com",
@@ -137,30 +161,6 @@
         },
         {
           "skill": "web dev"
-        }
-      ]
-    },
-    {
-      "name": "blog",
-      "description": "where i talk about linux, programming, and other fun computery stuff",
-      "url": "https://blog.gabedunn.dev",
-      "github": "redxtech/blog",
-      "image": "https://i.imgur.com/VZT3wCQ.png",
-      "skills": [
-        {
-          "skill": "vue"
-        },
-        {
-          "skill": "vitepress"
-        },
-        {
-          "skill": "static"
-        },
-        {
-          "skill": "markdown"
-        },
-        {
-          "skill": "writing"
         }
       ]
     }
