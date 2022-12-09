@@ -56,6 +56,13 @@
               class="navbar-link"
               v-text="route.name"
             />
+            <a
+              class="navbar-link"
+              href="https://blog.gabedunn.dev"
+              target="_blank"
+            >
+              blog
+            </a>
           </div>
         </div>
       </div>
@@ -76,6 +83,9 @@
           class="navbar-link-mobile"
           v-text="route.name"
         />
+        <a class="navbar-link" href="https://blog.gabedunn.dev" target="_blank">
+          blog
+        </a>
       </div>
     </div>
   </nav>
