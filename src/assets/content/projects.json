@@ -82,6 +82,24 @@
       ]
     },
     {
+      "name": "yoinked",
+      "description": "a simple url shortener and ip grabber",
+      "url": "https://shawt.af",
+      "github": "redxtech/yoinked",
+      "image": "https://i.imgur.com/QxVJ2rH.png",
+      "skills": [
+        {
+          "skill": "deno"
+        },
+        {
+          "skill": "typescript"
+        },
+        {
+          "skill": "api"
+        }
+      ]
+    },
+    {
       "name": "canmore-brewing",
       "description": "A landing page and informative website for a local brewery.",
       "url": "https://canmorebrewing.com",
