@@ -83,7 +83,7 @@
     },
     {
       "name": "yoinked",
-      "description": "a simple url shortener and ip grabber",
+      "description": "a simple, self-hosted url shortener",
       "url": "https://shawt.af",
       "github": "redxtech/yoinked",
       "image": "https://i.imgur.com/dE9FM6A.png",
@@ -96,6 +96,15 @@
         },
         {
           "skill": "api"
+        },
+        {
+          "skill": "self-hosting"
+        },
+        {
+          "skill": "docker"
+        },
+        {
+          "skill": "docker-compose"
         }
       ]
     },
