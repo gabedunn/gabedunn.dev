@@ -5,7 +5,7 @@
       "description": "This website. My personal website and portfolio.",
       "url": "https://gabedunn.dev",
       "github": "gabedunn/gabedunn.dev",
-      "image": "https://i.imgur.com/EaDCjMt.png",
+      "image": "https://res.cloudinary.com/gabe-dunn-dev/image/upload/v1596054460/gabedunn.dev/projects/gabedunn.dev.png",
       "skills": [
         {
           "skill": "vue"
@@ -86,7 +86,7 @@
       "description": "a simple, self-hosted url shortener",
       "url": "https://shawt.af",
       "github": "redxtech/yoinked",
-      "image": "https://i.imgur.com/dE9FM6A.png",
+      "image": "https://i.imgur.com/EaDCjMt.png",
       "skills": [
         {
           "skill": "deno"
