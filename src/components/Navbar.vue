@@ -83,7 +83,11 @@
           class="navbar-link-mobile"
           v-text="route.name"
         />
-        <a class="navbar-link" href="https://blog.gabedunn.dev" target="_blank">
+        <a
+          class="navbar-link-mobile"
+          href="https://blog.gabedunn.dev"
+          target="_blank"
+        >
           blog
         </a>
       </div>
