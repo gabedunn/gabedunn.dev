@@ -22,43 +22,34 @@
 </template>
 
 <script>
-  import SectionTitle from './titles/SectionTitle.vue'
+import SectionTitle from './titles/SectionTitle.vue'
 
-  export default {
-    name: 'Card',
-    components: { SectionTitle },
-    props: {
-      image: {
-        type: String,
-        required: true
-      },
-      href: {
-        type: String,
-        required: true
-      },
-      size: {
-        type: String,
-        required: false,
-        default: 'xs',
-        validator: value =>
-          [
-            'xs',
-            'sm',
-            'md',
-            'lg',
-            'xl',
-            '2xl',
-            '3xl',
-            '4xl',
-            '5xl',
-            '6xl'
-          ].some(v => v === value)
-      }
+export default {
+  name: 'Card',
+  components: { SectionTitle },
+  props: {
+    image: {
+      type: String,
+      required: true
     },
-    computed: {
-      style() {
-        return [`max-w-${this.size}`]
-      }
+    href: {
+      type: String,
+      required: true
+    },
+    size: {
+      type: String,
+      required: false,
+      default: 'xs',
+      validator: value =>
+        ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'].some(
+          v => v === value
+        )
+    }
+  },
+  computed: {
+    style() {
+      return [`max-w-${this.size}`]
     }
   }
+}
 </script>

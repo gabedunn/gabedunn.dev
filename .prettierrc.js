@@ -4,5 +4,5 @@ module.exports = {
   semi: false,
   singleQuote: true,
   trailingComma: 'none',
-  vueIndentScriptAndStyle: true
+  vueIndentScriptAndStyle: false
 }

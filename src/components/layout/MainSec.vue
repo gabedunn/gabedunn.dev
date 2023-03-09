@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'MainSec'
-  }
+export default {
+  name: 'MainSec'
+}
 </script>

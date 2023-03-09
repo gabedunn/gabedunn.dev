@@ -28,26 +28,26 @@
 </template>
 
 <script>
-  import MainSec from '../components/layout/MainSec.vue'
-  import Container from '../components/layout/Container.vue'
-  import PageTitle from '../components/titles/PageTitle.vue'
-  import Sec from '../components/layout/Sec.vue'
+import MainSec from '../components/layout/MainSec.vue'
+import Container from '../components/layout/Container.vue'
+import PageTitle from '../components/titles/PageTitle.vue'
+import Sec from '../components/layout/Sec.vue'
 
-  import toWords from '../assets/js/toWords.js'
+import toWords from '../assets/js/toWords.js'
 
-  export default {
-    name: 'Home',
-    components: { Sec, PageTitle, Container, MainSec },
-    computed: {
-      years() {
-        const yearsSince = (from, to) =>
-          Math.abs(
-            Math.round(
-              (to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
-            )
+export default {
+  name: 'Home',
+  components: { Sec, PageTitle, Container, MainSec },
+  computed: {
+    years() {
+      const yearsSince = (from, to) =>
+        Math.abs(
+          Math.round(
+            (to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
           )
-        return toWords(yearsSince(new Date('2015-10-15'), new Date()))
-      }
+        )
+      return toWords(yearsSince(new Date('2015-10-15'), new Date()))
     }
   }
+}
 </script>

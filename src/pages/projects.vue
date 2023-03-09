@@ -47,34 +47,34 @@
 </template>
 
 <script>
-  import Container from '../components/layout/Container.vue'
-  import PageTitle from '../components/titles/PageTitle.vue'
-  import MainSec from '../components/layout/MainSec.vue'
-  import Card from '../components/Card.vue'
-  import Sec from '../components/layout/Sec.vue'
+import Container from '../components/layout/Container.vue'
+import PageTitle from '../components/titles/PageTitle.vue'
+import MainSec from '../components/layout/MainSec.vue'
+import Card from '../components/Card.vue'
+import Sec from '../components/layout/Sec.vue'
 
-  import projects from '../assets/content/projects.json'
+import projects from '../assets/content/projects.json'
 
-  export default {
-    components: { Sec, Card, MainSec, PageTitle, Container },
-    data() {
-      return {
-        projects: projects.projects
-      }
+export default {
+  components: { Sec, Card, MainSec, PageTitle, Container },
+  data() {
+    return {
+      projects: projects.projects
     }
   }
+}
 </script>
 
 <style>
-  .badge {
-    @apply inline-flex items-center mx-1 px-2 py-0.5 rounded text-xs font-medium leading-4 bg-blue-100 text-blue-800;
+.badge {
+  @apply inline-flex items-center mx-1 px-2 py-0.5 rounded text-xs font-medium leading-4 bg-blue-100 text-blue-800;
 
-    &:first-child {
-      @apply ml-0;
-    }
-
-    &:last-child {
-      @apply mr-0;
-    }
+  &:first-child {
+    @apply ml-0;
   }
+
+  &:last-child {
+    @apply mr-0;
+  }
+}
 </style>

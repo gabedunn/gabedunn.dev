@@ -7,9 +7,9 @@
 </template>
 
 <script>
-  // TODO: potentially add subtitle option
+// TODO: potentially add subtitle option
 
-  export default {
-    name: 'ElementTitle'
-  }
+export default {
+  name: 'ElementTitle'
+}
 </script>

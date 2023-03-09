@@ -7,10 +7,10 @@
 </template>
 
 <script>
-  // TODO: potentially add subtitle option
-  // TODO: add margins
+// TODO: potentially add subtitle option
+// TODO: add margins
 
-  export default {
-    name: 'SectionTitle'
-  }
+export default {
+  name: 'SectionTitle'
+}
 </script>
