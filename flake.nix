@@ -42,18 +42,23 @@
               enable = true;
               package = pkgs.nodejs_22;
               corepack.enable = true;
+
+              pnpm = {
+                enable = true;
+                install.enable = true;
+              };
             };
           };
 
           # dotenv.enable = true;
 
           # scripts that will be available in the shell
-          scripts.build.exec = "yarn build";
-          scripts.dev.exec = "yarn dev";
-          scripts.run.exec = "yarn start";
+          scripts.build.exec = "pnpm run build";
+          scripts.dev.exec = "pnpm run dev";
+          scripts.run.exec = "pnpm run start";
 
           # processes to run with `devenv up`
-          processes.web.exec = "yarn dlx serve ./dist";
+          processes.web.exec = "pnpm run start";
         };
       };
     };
