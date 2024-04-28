@@ -82,10 +82,10 @@
       ]
     },
     {
-      "name": "yoinked",
+      "name": "short.af",
       "description": "a simple, self-hosted url shortener",
-      "url": "https://shawt.af",
-      "github": "redxtech/yoinked",
+      "url": "https://short.af",
+      "github": "redxtech/short.af",
       "image": "https://i.imgur.com/EaDCjMt.png",
       "skills": [
         {
