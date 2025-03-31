@@ -3,10 +3,7 @@
     <sec id="title">
       <page-title>
         projects
-        <template #subtitle>
-          A list of some of my projects, with a link to the project page and
-          github, if it is public.
-        </template>
+        <template #subtitle>some of the things i've worked on</template>
       </page-title>
     </sec>
     <main-sec>

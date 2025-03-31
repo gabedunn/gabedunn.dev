@@ -1,6 +1,75 @@
 {
   "projects": [
     {
+      "name": "nixfiles",
+      "description": "My personal server configurations for my homelab, desktop, and other devices. Deployed with deploy-rs, cachix-deploy, or github actions.",
+      "url": "https://github.com/redxtech/nixfiles",
+      "github": "redxtech/nixfiles",
+      "image": "https://raw.githubusercontent.com/NixOS/nixos-artwork/33856d7837cb8ba76c4fc9e26f91a659066ee31f/logo/nixos.svg",
+      "skills": [
+        {
+          "skill": "nix"
+        },
+        {
+          "skill": "secrets"
+        },
+        {
+          "skill": "ci/cd"
+        },
+        {
+          "skill": "network"
+        },
+        {
+          "skill": "reproducible"
+        }
+      ]
+    },
+    {
+      "name": "superfishial",
+      "description": "A kubernetes cluster collective, providing a wide range of services for ourselves and our friends.",
+      "url": "https://opencollective.com/superfishial",
+      "github": "superfishial",
+      "image": "https://slink.super.fish/image/ac76be6b-2e4f-47ec-bef3-2c9c33d27cca.png",
+      "skills": [
+        {
+          "skill": "k8s"
+        },
+        {
+          "skill": "argocd"
+        },
+        {
+          "skill": "sealed secrets"
+        },
+        {
+          "skill": "helm"
+        },
+        {
+          "skill": "terraform"
+        }
+      ]
+    },
+    {
+      "name": "limbo",
+      "description": "A feature-rich, configurable, and good looking system bar for hyprland on linux.",
+      "url": "https://github.com/co-conspirators/limbo",
+      "github": "co-conspirators/limbo",
+      "image": "https://slink.super.fish/image/cec9def7-1974-49dd-b4e9-b8831d27a634.jpg",
+      "skills": [
+        {
+          "skill": "typescript"
+        },
+        {
+          "skill": "gtk"
+        },
+        {
+          "skill": "linux"
+        },
+        {
+          "skill": "application"
+        }
+      ]
+    },
+    {
       "name": "gabedunn.dev",
       "description": "This website. My personal website and portfolio.",
       "url": "https://gabedunn.dev",
@@ -128,7 +197,7 @@
     {
       "name": "vue-plyr",
       "description": "A vue component for the plyr video & audio player.",
-      "url": "https://github.com/D",
+      "url": "https://github.com/redxtech/vue-plyr",
       "github": "redxtech/vue-plyr",
       "image": "https://res.cloudinary.com/gabe-dunn-dev/image/upload/v1596055342/gabedunn.dev/projects/vue-plyr.png",
       "skills": [
