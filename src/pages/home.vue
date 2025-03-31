@@ -10,9 +10,14 @@
     <main-sec>
       <div class="prose prose-lg">
         <p>
-          Hello! I am a full-stack web and software developer based in Calgary,
-          Alberta and I've been working with web technologies for the past
+          Hello! I am a full-stack web and software developer based in Western
+          Canada and I've been working on software for the past
           {{ years }} years.
+        </p>
+        <p>
+          Most recently, I've been focusing on immutable & reproducible builds
+          with NixOS, maintaining multiple packages in nixpkgs, and managing my
+          homelab with continuous integration and deployment.
         </p>
         <p>
           If you are interested in working with me please reach out via any of
