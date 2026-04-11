@@ -22,7 +22,6 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-vue": "next",
-    "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "lodash": "^4.17.19",
     "postcss-nested": "^4.2.3",
@@ -33,11 +32,6 @@
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "packageManager": "pnpm@8.15.4+sha1.c85a4305534f76d461407b59277b954bac97b5c4"
 }
