@@ -6,7 +6,7 @@
     >
       <a :href="href" target="_blank">
         <!--suppress HtmlUnknownTarget -->
-        <img class="w-full" :src="image" alt="Sunset in the mountains" />
+        <img class="w-full" :src="image" alt="project image" />
       </a>
       <div class="px-6 my-4">
         <section-title class="mb-2"><slot name="title" /></section-title>
