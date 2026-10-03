@@ -1,0 +1,31 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "12:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: vue-router
+    versions:
+    - 4.0.2
+    - 4.0.3
+  - dependency-name: eslint-config-prettier
+    versions:
+    - 7.1.0
+    - 7.2.0
+  - dependency-name: vite
+    versions:
+    - 2.0.0-alpha.5
+    - 2.0.0-beta.60
+  - dependency-name: husky
+    versions:
+    - 4.3.6
+    - 4.3.8
+  - dependency-name: "@vue/compiler-sfc"
+    versions:
+    - 3.0.5
+  - dependency-name: vue
+    versions:
+    - 3.0.5
